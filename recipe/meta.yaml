@@ -29,6 +29,13 @@ requirements:
     - python
     - flask >=0.8.0
 
+    # needed because flask's pinnings aren't tight enough
+    - jinja2 <=3.0.3
+    - werkzeug <=2.0.2
+
+
+    
+
 test:
   imports:
     - flask_uploads
